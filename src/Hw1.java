@@ -5,6 +5,7 @@ public class Hw1 {
     public static void main(String[] args) {
 
         //Задание 1
+        System.out.println("Задание 1");
         int a = 166;
         int b = 38;
 
@@ -16,6 +17,7 @@ public class Hw1 {
         System.out.println(a);
 
         // Задание 2
+        System.out.println("Задание 2");
 
         int[] testArr = {37,51,532,532,4,32,41,32,31,2,3,12,-11};
         Arrays.sort(testArr);
@@ -30,10 +32,11 @@ public class Hw1 {
         }
 
         // Задание 3
+        System.out.println("Задание 3");
         int n = 10;
         int[] testArr2 = new int[n];
         for (int i = 0; i < testArr2.length; i++) {
-            testArr2[i] = (int) ( Math.random() * n);
+            testArr2[i] = (int)  (Math.random() * n);
         }
         int max = 0;
         int min = 0;
@@ -58,6 +61,7 @@ public class Hw1 {
 
 
         //Задание 4
+        System.out.println("Задание 4");
         Scanner in = new Scanner(System.in);
         System.out.println("введите целое число больше 3");
         int someNum = in.nextInt();
@@ -80,6 +84,24 @@ public class Hw1 {
             System.out.println(Arrays.toString(resultArr));
         }
     //задание 5
+        System.out.println("Задание 5");
+        int[] [] newArr = new int[5][8];
+        int max1 = newArr[0][0];
+        for (int i = 0; i < newArr.length; i++) {
+            for (int j = 0; j < newArr[i].length; j++) {
+                newArr[i][j] = (int) ((Math.random()*199)-99);
+            }
+            for(int i1 = 0; i1 < newArr.length; i1++) {
+                for(int j1 = 0; j1 < newArr[i].length; j1++) {
+                    if(newArr[i1][j1] > max1)
+                        max1 = newArr[i1][j1];
+                }
+            }
+        }
+        System.out.println(Arrays.deepToString(newArr));
+        System.out.println("Максимальный элемент массива = " + max1);
+
+
 
 
 
