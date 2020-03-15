@@ -55,7 +55,21 @@ public class Hw2 {
 
         //Задание4
         System.out.println("Задание 4");
+        String strPal = "а роза упала на лапу азора";
+        strPal = strPal.replaceAll(" ", "");
+        StringBuilder sb = new StringBuilder(strPal);
+        sb.reverse();
+        String palindrome = sb.toString();
+        if (strPal.equalsIgnoreCase(palindrome)) {
+            System.out.println("Строка палиндром");
+        }
+        else {
+            System.out.println("Строка не палиндром");
+        }
 
+
+        //Задание5
+        System.out.println("Задание 5");
 
 
 
